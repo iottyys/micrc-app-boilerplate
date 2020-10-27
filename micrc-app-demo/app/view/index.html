@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" href="/public/{{ module }}/umi.css" />
+    <script>
+        window.routerBase = '/modules/{{ module }}';
+    </script>
+    <script>
+        window.publicPath = window.__INJECTED_PUBLIC_PATH_BY_QIANKUN__;
+        window.publicPath = window.publicPath ? window.publicPath + 'public/{{ module }}/' : '/public/{{ module }}/';
+    </script>
+</head>
+<body>
+<div id="root-slave"></div>
+<script src="/public/{{ module }}/umi.js" entry></script>
+</body>
+</html>
